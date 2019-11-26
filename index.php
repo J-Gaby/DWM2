@@ -1,5 +1,5 @@
 <?php
-if (!empty($_POST)) {
+/*if (!empty($_POST)) {
     echo $_POST['val1'].' '.$_POST['sign'].' '.$_POST['val2']. ' = ';
     if ($_POST['sign'] === 'plus'){
         echo (intval($_POST['val1']) + intval($_POST['val2']));
@@ -14,6 +14,39 @@ if (!empty($_POST)) {
     } else {
     echo '?? wtf ?' ;
     }
+}
+*/
+
+switch ($_POST['sign']) {
+	case 'plus':
+		echo (intval($_POST['val1']) + intval($_POST['val2']));
+		break;
+
+	case 'moins':
+		echo (intval($_POST['val1']) - intval($_POST['val2']));
+		break;
+
+	case 'fois':
+		echo (intval($_POST['val1']) * intval($_POST['val2']));
+		break;
+	
+	case 'divise':
+		echo (intval($_POST['val1']) / intval($_POST['val2']));
+		break;
+
+	case 'exposant':
+		$val1 = intval($_POST['val1']) ;
+        $val2 = intval($_POST['val2']) ;
+        $resultat = 1 ;
+        for ($i = 0; $i<$val2; $i++) {
+            $resultat = $resultat * $val1 ;
+        }
+         echo $resultat ;
+		break;
+
+	default:
+		echo '?? wtf ?' ;
+		break;
 }
 ?>
 <form action="index.php" method="POST">
