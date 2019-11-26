@@ -17,21 +17,23 @@
 }
 */
 
+$result = 0;
+
 switch ($_POST['sign']) {
 	case 'plus':
-		echo (intval($_POST['val1']) + intval($_POST['val2']));
+		$result = intval($_POST['val1']) + intval($_POST['val2']);
 		break;
 
 	case 'moins':
-		echo (intval($_POST['val1']) - intval($_POST['val2']));
+		$result = intval($_POST['val1']) - intval($_POST['val2']);
 		break;
 
 	case 'fois':
-		echo (intval($_POST['val1']) * intval($_POST['val2']));
+		$result = intval($_POST['val1']) * intval($_POST['val2']);
 		break;
 	
 	case 'divise':
-		echo (intval($_POST['val1']) / intval($_POST['val2']));
+		$result = intval($_POST['val1']) / intval($_POST['val2']);
 		break;
 
 	case 'exposant':
@@ -45,20 +47,23 @@ switch ($_POST['sign']) {
 		break;
 
 	default:
-		echo '?? wtf ?' ;
+		$result = '?? wtf ?' ;
 		break;
 }
+
+echo $result;
+
 ?>
 <form action="index.php" method="POST">
     <label for="val1">Val 1 </label>
     <input type="text" name="val1" id="val1" />
     <label for="sign">Sign </label>
     <select name="sign" id="sign" >
-        <option>plus</option>
-        <option>moins</option>
-        <option>fois</option>
-        <option>divise</option>
-        <option>exposant</option>
+        <option <?php if ($sign === 'plus') {echo 'selected';} ?>>plus</option>
+        <option <?php if ($sign === 'moins') {echo 'selected';} ?>>moins</option>
+        <option <?php if ($sign === 'fois') {echo 'selected';} ?>>fois</option>
+        <option <?php if ($sign === 'divise') {echo 'selected';} ?>>divise</option>
+        <option <?php if ($sign === 'exposant') {echo 'selected';} ?>>exposant</option>
     </select>
     <label for="val2">Val 2 </label>
     <input type="text" name="val2" id="val2" />
