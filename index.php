@@ -1,10 +1,33 @@
 <?php
-
-echo $_GET['val1'].' '.$_GET['sign'].' '.$_GET['val2']. ' = ';
-(intval($_GET['val1']) + intval($_GET['val2']));
-
-if ($_GET['sign'] === 'plus'){
-    echo (intval($_GET['val1']) + intval($_GET['val2']));
+if (!empty($_POST)) {
+    echo $_POST['val1'].' '.$_POST['sign'].' '.$_POST['val2']. ' = ';
+    if ($_POST['sign'] === 'plus'){
+        echo (intval($_POST['val1']) + intval($_POST['val2']));
+    } elseif($_POST['sign'] === 'moins') {
+         echo (intval($_POST['val1']) - intval($_POST['val2']));
+    } elseif($_POST['sign'] === 'fois'){
+         echo (intval($_POST['val1']) * intval($_POST['val2']));
+    } elseif($_POST['sign'] === 'divise'){
+         echo (intval($_POST['val1']) / intval($_POST['val2']));
+    } elseif($_POST['sign'] === 'exposant'){
+         echo pow(intval($_POST['val1']),intval($_POST['val2'])); 
+    } else {
+    echo '?? wtf ?' ;
+    }
 }
-
 ?>
+<form action="index.php" method="POST">
+    <label for="val1">Val 1 </label>
+    <input type="text" name="val1" id="val1" />
+    <label for="sign">Sign </label>
+    <select name="sign" id="sign" >
+        <option>plus</option>
+        <option>moins</option>
+        <option>fois</option>
+        <option>divise</option>
+        <option>exposant</option>
+    </select>
+    <label for="val2">Val 2 </label>
+    <input type="text" name="val2" id="val2" />
+    <input type="submit" value="calcule" />
+</form>
