@@ -1,0 +1,19 @@
+li{
+	list-style: none;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: black;
+	color: grey;
+	width: auto;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+a{
+	color: grey;
+}
