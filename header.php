@@ -12,7 +12,7 @@
 			<li><a href="index.php">Accueil</a></li>
 		</div>
 		<div>
-			<li>Autre page</li>
+			<li><a href="formulaire.php">Autre page</a></li>
 		</div>
 		<div>
 			<li>666</li>
@@ -21,6 +21,4 @@
 			<li>Contact</li>
 		</div>
 	</nav>
-
-	<h1>Calculatrice</h1>
 </header>

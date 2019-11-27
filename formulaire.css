@@ -1,0 +1,30 @@
+h1{
+	font-family: Arial;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+textarea{
+	background-color: black;
+	color: grey;
+	border: 2px solid grey;
+}
+
+input{
+	width: 100px;
+	height: 20px;
+	font-size: 10px;
+	background-color: blue;
+	color: white;
+	margin-top: 10px;
+	border: 2px solid blue;
+	font-family: Arial;
+}
+
+label{
+	margin-bottom: 10px;
+	font-family: Arial;
+}
