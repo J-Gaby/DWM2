@@ -15,7 +15,7 @@
 			<li><a href="formulaire.php">Autre page</a></li>
 		</div>
 		<div>
-			<li>666</li>
+			<li><a href="666.php">666</a></li>
 		</div>
 		<div>
 			<li>Contact</li>
