@@ -56,6 +56,9 @@ echo $result;*/
 include 'header.php';
 
 ?>
+
+<h1>Calculatrice</h1>
+
 <form action="index.php" method="POST">
     <label for="val1">Val 1 </label>
     <input type="text" name="val1" id="val1" />
@@ -71,7 +74,3 @@ include 'header.php';
     <input type="text" name="val2" id="val2" />
     <input type="submit" value="calcule" />
 </form>
-
-<?php
-include 'footer.php';
-?>
