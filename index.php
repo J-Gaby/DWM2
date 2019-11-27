@@ -17,7 +17,7 @@
 }
 */
 
-$result = 0;
+/*$result = 0;
 
 switch ($_POST['sign']) {
 	case 'plus':
@@ -51,7 +51,9 @@ switch ($_POST['sign']) {
 		break;
 }
 
-echo $result;
+echo $result;*/
+
+include 'header.php';
 
 ?>
 <form action="index.php" method="POST">
@@ -69,3 +71,7 @@ echo $result;
     <input type="text" name="val2" id="val2" />
     <input type="submit" value="calcule" />
 </form>
+
+<?php
+include 'footer.php';
+?>
