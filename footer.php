@@ -1,3 +1,4 @@
+<!DOCTYPE hmtl>
 <footer>
     <p>The new legendary website</p>
 </footer>

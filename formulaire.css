@@ -17,10 +17,10 @@ input{
 	width: 100px;
 	height: 20px;
 	font-size: 10px;
-	background-color: blue;
-	color: white;
+	background-color: gray;
+	color: black;
 	margin-top: 10px;
-	border: 2px solid blue;
+	border: 2px solid black;
 	font-family: Arial;
 }
 

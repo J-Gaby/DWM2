@@ -17,8 +17,7 @@
 		<div>
 			<li><a href="666.php">666</a></li>
 		</div>
-		<div>
-			<li>Contact</li>
-		</div>
 	</nav>
 </header>
+</html>
+
