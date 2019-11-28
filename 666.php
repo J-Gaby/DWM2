@@ -1,15 +1,15 @@
-<link rel="stylesheet" type="text/css" href="formulaire.css">
+<link rel="stylesheet" type="text/css" href="666.css">
 <?php
-include 'header.php';
+include 'header.html';
 ?>
 
 <h1>Formulaire du Diable</h1>
 
 <form action="666.php" method="POST">
     <div class="centrer">
-        <labe>Nom :</label><textarea type="text" name="nom" rows="1" cols="30"></textarea>
+        <label>Nom :</label><textarea type="text" name="nom" rows="1" cols="30"></textarea>
     </div>
-    <div centrer="centrer">
+    <div class="centrer">
         <label>Email :</label><textarea type="email" name="email" rows="1" cols="30"></textarea>
     </div>
     <div class="centrer">
@@ -18,7 +18,7 @@ include 'header.php';
     <div class="centrer">
         <label>Message :</label>
     </div>
-    <div class="cnetrer">
+    <div class="centrer">
         <textarea type="text" name="message" rows="20" cols="30"></textarea>
     </div>
     <div class="centrer">
@@ -73,4 +73,8 @@ if(!$mail->send()) {
  } else {
     echo 'Le message a bien été envoyé !';
  }}
+?>
+
+<?php
+include 'footer.html';
 ?>

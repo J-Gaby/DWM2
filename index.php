@@ -53,7 +53,7 @@ switch ($_POST['sign']) {
 
 echo $result;*/
 
-include 'header.php';
+include 'header.html';
 
 ?>
 
@@ -74,3 +74,7 @@ include 'header.php';
     <input type="text" name="val2" id="val2" />
     <input type="submit" value="calcule" />
 </form>
+
+<?php
+include 'footer.html';
+?>

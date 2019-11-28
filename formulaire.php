@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="formulaire.css">
 <?php
-include 'header.php';
+include 'header.html';
 ?>
 
 <h1>Livre d'or</h1>
@@ -36,4 +36,8 @@ if(!empty($_SESSION['messages']) && count($_SESSION['messages'])) :?>
     </ul>
 <?php
 endif
+?>
+
+<?php
+include 'footer.html';
 ?>
