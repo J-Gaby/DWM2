@@ -1,0 +1,15 @@
+div{
+    margin: 10px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+.c{
+    display: flex;
+}
+
+.c label{
+    align-self: flex-start;
+}
